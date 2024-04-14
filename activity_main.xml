@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Stopwatch UI -->
+    <TextView
+        android:id="@+id/timer_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="48sp"
+        android:text="00:00:00"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/stop_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"/>
+    </LinearLayout>
+
+    <!-- Questions and Answers -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Existing Questions -->
+            <TextView
+                android:id="@+id/gratitude_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What are three things you're grateful for today?"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/gratitude_answer_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Write your answer here"
+                android:padding="8dp"
+                android:background="@android:color/white"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/travel_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="If you could travel anywhere in the world right now, where would you go and why?"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/travel_answer_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Write your answer here"
+                android:padding="8dp"
+                android:background="@android:color/white"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/kindness_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What's one small act of kindness you witnessed or experienced recently?"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/kindness_answer_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Write your answer here"
+                android:padding="8dp"
+                android:background="@android:color/white"
+                android:textSize="16sp"/>
+
+            <!-- New Emotion-related Questions and Answers -->
+            <TextView
+                android:id="@+id/emotion_question1_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How are you feeling today?"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/emotion_question1_answer_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Write your answer here"
+                android:padding="8dp"
+                android:background="@android:color/white"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/emotion_question2_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What is one thing that made you happy today?"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/emotion_question2_answer_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Write your answer here"
+                android:padding="8dp"
+                android:background="@android:color/white"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/emotion_question3_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Is there anything that's been bothering you today?"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/emotion_question3_answer_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Write your answer here"
+                android:padding="8dp"
+                android:background="@android:color/white"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/emotion_question4_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What is something you are proud of today?"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/emotion_question4_answer_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Write your answer here"
+                android:padding="8dp"
+                android:background="@android:color/white"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/emotion_question5_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What are you looking forward to tomorrow?"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/emotion_question5_answer_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Write your answer here"
+                android:padding="8dp"
+                android:background="@android:color/white"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
